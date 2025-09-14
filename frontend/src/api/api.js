@@ -1,9 +1,8 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: import.meta.env.MODE === "development"
-    ? "http://localhost:4000/api"              // when running locally
-    : "https://feedback-app-ssly.onrender.com/api", // Render backend for Netlify
+  baseURL: import.meta.env.VITE_API_BASE_URL, // controlled by .env files
+  withCredentials: true,
 });
 
 API.interceptors.request.use((config) => {
