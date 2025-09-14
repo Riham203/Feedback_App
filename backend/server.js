@@ -7,8 +7,8 @@ const cors = require("cors");
 const app = express();
 
 const allowedOrigins = [
-  "http://localhost:5173", // local frontend
-  "https://feedbackappbyriham.netlify.app", // replace with your Netlify frontend URL
+  "http://localhost:5173", 
+  "https://rihamfeedbackapp.netlify.app", 
 ];
 
 // Middleware
